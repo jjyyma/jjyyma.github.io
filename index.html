@@ -1,47 +1,341 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>567shop.com 域名出售 | Domain For Sale</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>言论自由 · 自由表达，共建更强社会</title>
+  <meta name="description" content="一页式宣传网站：为什么言论自由重要？我们如何在日常生活中守护、实践与推广自由表达。" />
+  <meta property="og:title" content="言论自由 · 自由表达，共建更强社会" />
+  <meta property="og:description" content="为什么言论自由重要？如何守护与实践？清晰论点、常见误解与回应、行动清单、可打印海报。" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1220; --fg:#eaf2ff; --muted:#9bb6d1; --acc:#0ea5e9; --acc2:#22c55e; --card:#111a2b; --ring:rgba(14,165,233,.35);
+      --shadow: 0 10px 30px rgba(2,6,23,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; color:var(--fg); background:radial-gradient(1200px 800px at 10% -10%, #143457, transparent 40%),
+      radial-gradient(800px 600px at 90% 10%, #0b3a5c, transparent 35%), var(--bg);}
+    a{color:inherit; text-decoration:none}
+    .container{max-width:1100px; margin:0 auto; padding:0 20px}
+    header{position:sticky; top:0; z-index:50; backdrop-filter:saturate(140%) blur(10px); background:linear-gradient(to bottom, rgba(11,18,32,.85), rgba(11,18,32,.35)); border-bottom:1px solid rgba(255,255,255,.06)}
+    nav{display:flex; align-items:center; gap:18px; padding:14px 0}
+    nav .logo{display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.5px}
+    nav .logo .dot{width:10px; height:10px; border-radius:999px; background:linear-gradient(135deg, var(--acc), #60a5fa)}
+    nav .links{margin-left:auto; display:flex; gap:18px;}
+    nav .links a{opacity:.9}
+    nav .links a:hover{opacity:1; text-decoration:underline}
+
+    .hero{position:relative; overflow:hidden}
+    .hero .wrap{display:grid; grid-template-columns:1.2fr .8fr; gap:34px; align-items:center; padding:70px 0}
+    .kicker{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border:1px solid rgba(255,255,255,.08); border-radius:999px; font-size:12px; color:var(--muted); background:rgba(255,255,255,.02)}
+    .kicker svg{width:14px;height:14px}
+    h1{font-size:44px; line-height:1.1; margin:14px 0 12px}
+    .lead{color:#cfe4ff; opacity:.95; font-size:18px}
+    .cta{display:flex; gap:12px; margin-top:22px}
+    .btn{display:inline-flex; align-items:center; gap:10px; padding:12px 16px; border-radius:14px; border:1px solid rgba(255,255,255,.12); background:#0e1b2e; box-shadow:var(--shadow)}
+    .btn.primary{background:linear-gradient(135deg, var(--acc), #60a5fa); border-color:transparent; color:#06223a; font-weight:700}
+    .btn.secondary:hover{background:#0f223b}
+    .hero .card{background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.08); padding:18px; border-radius:18px; box-shadow:var(--shadow)}
+    .stat{display:grid; grid-template-columns:auto 1fr; gap:8px 14px; align-items:center}
+    .stat strong{font-size:28px}
+
+    section{padding:70px 0; border-top:1px solid rgba(255,255,255,.06)}
+    h2{font-size:28px; margin:0 0 16px}
+    .grid{display:grid; gap:16px}
+    .grid-3{grid-template-columns:repeat(3,1fr)}
+    .grid-2{grid-template-columns:repeat(2,1fr)}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.08); padding:20px; border-radius:18px; box-shadow:var(--shadow)}
+    .muted{color:var(--muted)}
+    .tick{display:flex; gap:12px}
+
+    .qa details{border:1px solid rgba(255,255,255,.08); padding:14px 16px; border-radius:14px; background:rgba(255,255,255,.02)}
+    .qa details+details{margin-top:12px}
+    .qa summary{cursor:pointer; font-weight:600}
+
+    .banner{display:grid; gap:14px; align-items:center; grid-template-columns:1fr auto; border:1px dashed rgba(255,255,255,.2); border-radius:18px; padding:18px}
+    .banner a.btn{box-shadow:none}
+
+    footer{padding:40px 0; color:var(--muted)}
+    .fine{font-size:12px; opacity:.9}
+
+    @media (max-width:900px){
+      .hero .wrap{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
+      h1{font-size:36px}
+    }
+  </style>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
-  <div class="max-w-2xl w-full bg-white rounded-2xl shadow-lg p-8 space-y-6">
-    <!-- 标题 -->
-    <h1 class="text-3xl font-bold text-center text-gray-800">域名出售 / Domain For Sale</h1>
-
-    <!-- 域名展示 -->
-    <div class="text-center">
-      <p class="text-2xl font-semibold text-blue-600">567shop.com</p>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a class="logo" href="#top" aria-label="返回顶部">
+          <span class="dot"></span>
+          <span>自由表达</span>
+        </a>
+        <div class="links">
+          <a href="#why">为什么重要</a>
+          <a href="#how">如何守护</a>
+          <a href="#myths">误解与回应</a>
+          <a href="#qa">常见问答</a>
+          <a href="#assets">资源</a>
+        </div>
+      </nav>
     </div>
+  </header>
 
-    <!-- 中文介绍 -->
-    <div class="space-y-2">
-      <h2 class="text-xl font-bold text-gray-700">中文说明</h2>
-      <p class="text-gray-600 leading-relaxed">
-        域名 <span class="font-semibold text-gray-800">567shop.com</span> 现正出售。该域名简短易记，适合电商、购物、数字品牌等相关网站使用。
-      </p>
+  <main id="top">
+    <section class="hero">
+      <div class="container wrap">
+        <div>
+          <span class="kicker" aria-label="倡议标签">
+            <!-- megaphone icon -->
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 11v2m0-2 14-6v14L3 13Zm0 0v6a2 2 0 0 0 2 2h2l2-4" stroke="currentColor" stroke-width="1.5"/></svg>
+            公民倡议 · 言论自由
+          </span>
+          <h1>让每一个声音，都有被听见的权利</h1>
+          <p class="lead">言论自由是社会进步的发动机：它让真相被检验、让创意彼此碰撞、让弱者也能发声。保护它，就是在保护我们每个人的尊严与安全。</p>
+          <div class="cta">
+            <a class="btn primary" href="#how">立即行动</a>
+            <a class="btn secondary" href="#assets">下载海报</a>
+          </div>
+        </div>
+        <div class="card" aria-label="关键信息">
+          <div class="stat">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v18m-9-9h18" stroke="currentColor" stroke-width="1.5"/></svg>
+            <div>
+              <strong>四大价值</strong>
+              <div class="muted">真相 · 创新 · 监督 · 尊严</div>
+            </div>
+          </div>
+          <div style="height:12px"></div>
+          <div class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4 10-10" stroke="currentColor" stroke-width="1.5"/></svg><span>开放讨论能加速问题发现与纠错。</span></div>
+          <div class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4 10-10" stroke="currentColor" stroke-width="1.5"/></svg><span>多元观点促进科学与技术创新。</span></div>
+          <div class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4 10-10" stroke="currentColor" stroke-width="1.5"/></svg><span>公共监督降低权力滥用的风险。</span></div>
+          <div class="tick"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4 4 10-10" stroke="currentColor" stroke-width="1.5"/></svg><span>表达自由是人格尊严与自治的基石。</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why">
+      <div class="container">
+        <h2>为什么言论自由重要？</h2>
+        <div class="grid grid-3">
+          <article class="card">
+            <h3>1) 追求真相</h3>
+            <p class="muted">没有反驳，就没有检验。开放表达让观点在“公开赛场”上被质证，谬误会被纠正，事实会更清晰。</p>
+          </article>
+          <article class="card">
+            <h3>2) 保护少数</h3>
+            <p class="muted">当主流意见犯错或忽视弱势，表达自由给了少数者一个安全阀——他们可以发声、组织与争取权利。</p>
+          </article>
+          <article class="card">
+            <h3>3) 促进创新</h3>
+            <p class="muted">科学与创意依赖于假设的提出与挑战。容错的公共讨论，能将“异想天开”转化为“突破边界”。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="container">
+        <h2>如何在日常守护与实践？</h2>
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>公民行动清单</h3>
+            <ul class="muted">
+              <li>在争议中也尊重他人的发表权，先理解，再表达。</li>
+              <li>反对暴力与人身攻击，聚焦论证与证据。</li>
+              <li>支持独立媒体、图书馆与知识开放计划。</li>
+              <li>用真实信息参与公共讨论，主动标注来源。</li>
+              <li>在学校与社区组织辩论赛、读书会和公开讲座。</li>
+              <li>使用端到端加密工具，保护表达者的安全。</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>平台与机构的良好实践</h3>
+            <ul class="muted">
+              <li>清晰、可申诉的社区规则；透明披露内容处置数据。</li>
+              <li>优先限制行为（骚扰、刷屏）而非意见本身。</li>
+              <li>为新闻事实核查、媒体素养教育提供资金与接口。</li>
+              <li>设计多样的内容控制选项，尊重用户自主选择。</li>
+            </ul>
+          </div>
+        </div>
+        <div class="banner" role="complementary">
+          <div>
+            <strong>每个人都可以做一点事。</strong>
+            <div class="muted">从今天起：分享可靠信息、倾听不同立场、支持自由表达的空间。</div>
+          </div>
+          <div>
+            <a class="btn primary" href="#share">传播此页</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="myths">
+      <div class="container">
+        <h2>常见误解与回应</h2>
+        <div class="qa">
+          <details>
+            <summary>“言论自由就是想说什么就说什么？”</summary>
+            <p class="muted">自由并不等于没有边界。典型的边界包括直接煽动即时暴力、严重诽谤、极端隐私侵犯等。理性社会在最大化表达自由的同时，对明确、可证的危害设定最小必要限制。</p>
+          </details>
+          <details>
+            <summary>“限制冒犯性言论能让社会更和谐。”</summary>
+            <p class="muted">短期看似安静，长期可能压制矫正错误的能力。更好的做法是以反驳、屏蔽、降噪工具应对冒犯，同时保留公众检验与监督的空间。</p>
+          </details>
+          <details>
+            <summary>“虚假信息太多，只能靠禁。”</summary>
+            <p class="muted">治理虚假信息需要综合手段：提升媒体素养、建设事实核查网络、提高平台透明度、激励优质内容竞争，而不是一禁了之。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="qa">
+      <div class="container">
+        <h2>常见问答</h2>
+        <div class="qa">
+          <details>
+            <summary>如何在职场与校园开展建设性的讨论？</summary>
+            <p class="muted">建立“先倾听三分钟”的规则；明确“不攻击个人，只讨论观点”；鼓励引用数据与来源；设置主持人，确保弱势声音有发言时段。</p>
+          </details>
+          <details>
+            <summary>遇到网络暴力怎么办？</summary>
+            <p class="muted">收集证据、使用平台屏蔽/举报工具、寻求法律与心理支持；组织同伴“护航”回复，降低二次伤害。</p>
+          </details>
+          <details>
+            <summary>如何平衡言论自由与社会责任？</summary>
+            <p class="muted">坚持“三检”：<em>自我检视</em>（我是否基于事实？）、<em>同理检视</em>（是否考虑到他人的处境？）、<em>后果检视</em>（我的表达是否会造成可预见的直接伤害？）。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="assets">
+      <div class="container">
+        <h2>资源与可打印海报</h2>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>海报 A4</h3>
+            <p class="muted">适合公告栏、教室与社区中心。</p>
+            <a class="btn" href="#" id="dl-a4">下载 PDF</a>
+          </div>
+          <div class="card">
+            <h3>社交媒体图</h3>
+            <p class="muted">1:1 正方形，适合朋友圈/动态。</p>
+            <a class="btn" href="#" id="dl-social">下载 PNG</a>
+          </div>
+          <div class="card">
+            <h3>分享此页面</h3>
+            <p class="muted">一键复制链接，邀请更多人参与。</p>
+            <a class="btn" href="#" id="copy-link">复制链接</a>
+          </div>
+        </div>
+        <p class="fine">提示：你也可以将本页作为 <code>index.html</code> 放入 GitHub Pages 仓库直接发布。</p>
+      </div>
+    </section>
+
+    <section id="share">
+      <div class="container">
+        <h2>一起扩散：#自由表达</h2>
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>文案范例</h3>
+            <p class="muted">“没有讨论，就没有进步。了解为什么言论自由对你我都重要——欢迎查看这份简明清晰的指南。”</p>
+            <p class="muted">“尊重不同，拒绝人身攻击。让观点在光亮中被检验。”</p>
+          </div>
+          <div class="card">
+            <h3>组织建议</h3>
+            <ul class="muted">
+              <li>举办跨专业辩论与圆桌，邀请立场不同的嘉宾。</li>
+              <li>设置“反方日”：鼓励大家为与自身立场相反的观点做最强辩护。</li>
+              <li>建立匿名反馈箱，保护弱势表达者。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© <span id="year"></span> 自由表达倡议 · 支持开放、理性与尊重的公共讨论。</div>
+      <div class="fine">免责声明：本页用于公众教育与倡议，内容不构成具体法律意见。请依据你所在地的法律法规合规行事。</div>
     </div>
+  </footer>
 
-    <!-- 英文介绍 -->
-    <div class="space-y-2">
-      <h2 class="text-xl font-bold text-gray-700">English Description</h2>
-      <p class="text-gray-600 leading-relaxed">
-        The domain <span class="font-semibold text-gray-800">567shop.com</span> is now available for sale. It is short, easy to remember, and perfect for e-commerce, shopping platforms, or digital branding.
-      </p>
-    </div>
+  <script>
+    // 年份与分享
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const linkBtn = document.getElementById('copy-link');
+    if (linkBtn) {
+      linkBtn.addEventListener('click', async (e)=>{
+        e.preventDefault();
+        try {
+          await navigator.clipboard.writeText(location.href);
+          linkBtn.textContent = '已复制链接';
+        } catch { linkBtn.textContent = '复制失败，请手动复制地址栏链接'; }
+        setTimeout(()=> linkBtn.textContent='复制链接', 3000);
+      });
+    }
 
-    <!-- 联系方式 -->
-    <div class="text-center space-y-2">
-      <h2 class="text-lg font-bold text-gray-700">联系方式 / Contact</h2>
-      <p class="text-gray-700">📧 <a href="mailto:ggyyma@outlook.com" class="text-blue-600 hover:underline">ggyyma@outlook.com</a></p>
-    </div>
+    // 生成简单的 PDF/PNG 资源（前端导出示例）
+    // 说明：此处使用原生 Canvas 生成占位海报，发布后可替换为更精致的设计文件。
+    function makePoster(w,h,text){
+      const canvas = document.createElement('canvas');
+      canvas.width=w; canvas.height=h;
+      const ctx = canvas.getContext('2d');
+      const grad = ctx.createLinearGradient(0,0,w,h);
+      grad.addColorStop(0,'#0ea5e9'); grad.addColorStop(1,'#1e3a8a');
+      ctx.fillStyle = grad; ctx.fillRect(0,0,w,h);
+      ctx.fillStyle = 'rgba(255,255,255,.9)';
+      ctx.font = `${Math.round(w*0.09)}px Inter, system-ui`;
+      ctx.textAlign='center'; ctx.textBaseline='middle';
+      ctx.fillText('言论自由', w/2, h*0.36);
+      ctx.font = `${Math.round(w*0.04)}px Inter, system-ui`;
+      wrapText(ctx, text, w/2, h*0.58, Math.round(w*0.8), Math.round(w*0.05));
+      return canvas;
+    }
+    function wrapText(ctx, text, x, y, maxWidth, lineHeight){
+      const words = text.split('');
+      let line='', lines=[];
+      for(const ch of words){
+        const test = line + ch;
+        if(ctx.measureText(test).width > maxWidth){ lines.push(line); line = ch; }
+        else line = test;
+      }
+      lines.push(line);
+      const total = lines.length*lineHeight;
+      let startY = y - total/2 + lineHeight/2;
+      for(const ln of lines){ ctx.fillText(ln, x, startY); startY += lineHeight; }
+    }
 
-    <!-- 底部 -->
-    <footer class="text-center text-sm text-gray-500 pt-4 border-t">
-      © 2025 567shop.com
-    </footer>
-  </div>
+    function downloadURI(uri, name){
+      const a=document.createElement('a'); a.href=uri; a.download=name; document.body.appendChild(a); a.click(); a.remove();
+    }
+
+    document.getElementById('dl-social')?.addEventListener('click', (e)=>{
+      e.preventDefault();
+      const c = makePoster(1080,1080,'开放讨论·检验真相\n尊重不同·反对人身攻击');
+      downloadURI(c.toDataURL('image/png'), 'freedom-of-speech-square.png');
+    });
+
+    document.getElementById('dl-a4')?.addEventListener('click', async (e)=>{
+      e.preventDefault();
+      // 简易：导出高分辨率 PNG 作为可打印文件
+      const c = makePoster(2480,3508,'人人可声·人人可听\n以理服人·以证据说话');
+      downloadURI(c.toDataURL('image/png'), 'freedom-of-speech-A4.png');
+    });
+  </script>
 </body>
 </html>
