@@ -268,26 +268,25 @@
   </main>
 
   <footer>
-    <div class="container">
-      <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://ximalaya-org.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <section id="comments">
+      <div class="container">
+        <h2>留言区</h2>
+        <div id="disqus_thread"></div>
+        <script>
+          var disqus_config = function () {
+            this.page.url = window.location.href;  // 当前页面 URL
+            this.page.identifier = document.title; // 页面唯一 ID，可自定义
+          };
+          (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'ximalaya-org.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>请开启 JavaScript 才能查看 <a href="https://disqus.com/" rel="nofollow">Disqus 评论区</a></noscript>
+      </div>
+    </section>
       <div>© <span id="year"></span> 自由表达倡议 · 支持开放、理性与尊重的公共讨论。</div>
       <div class="fine">免责声明：本页用于公众教育与倡议，内容不构成具体法律意见。请依据你所在地的法律法规合规行事。</div>
     </div>
